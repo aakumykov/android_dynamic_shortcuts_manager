@@ -3,8 +3,8 @@ package com.github.aakumykov.kotlin_playground.shortcuts_parser
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.github.aakumykov.android_dynamic_shortcuts_manager.R
 import com.github.aakumykov.android_dynamic_shortcuts_manager.shortcuts_parser.utils.ResourceResolver
-import com.github.aakumykov.kotlin_playground.common.packageName
-import com.github.aakumykov.kotlin_playground.common.resources
+import com.github.aakumykov.kotlin_playground.common_no_test_stuff.packageName
+import com.github.aakumykov.kotlin_playground.common_no_test_stuff.resources
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith

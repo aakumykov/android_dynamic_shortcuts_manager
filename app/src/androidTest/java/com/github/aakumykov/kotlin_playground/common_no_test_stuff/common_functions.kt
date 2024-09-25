@@ -1,4 +1,4 @@
-package com.github.aakumykov.kotlin_playground.common
+package com.github.aakumykov.kotlin_playground.common_no_test_stuff
 
 import androidx.annotation.StringRes
 

@@ -1,10 +1,8 @@
 package com.github.aakumykov.kotlin_playground.shortcuts_parser;
 
-import static com.github.aakumykov.kotlin_playground.common.CommonValues.TARGET_CONTEXT;
+import static com.github.aakumykov.kotlin_playground.common_no_test_stuff.CommonValues.TARGET_CONTEXT;
 
 import static org.junit.Assert.assertEquals;
-
-import android.content.Intent;
 
 import androidx.annotation.Nullable;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
