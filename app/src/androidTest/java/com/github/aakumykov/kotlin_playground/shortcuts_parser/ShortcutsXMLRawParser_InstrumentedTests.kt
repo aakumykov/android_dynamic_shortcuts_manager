@@ -83,7 +83,7 @@ class ShortcutsXMLRawParser_InstrumentedTests {
     }
 
     @Test
-    fun when_pause_raw_shortcuts_xml_when_corresponding_objects_equals() {
+    fun when_parse_raw_shortcuts_xml_when_corresponding_objects_equals() {
         parse().forEach { rawShortcut: RawShortcut ->
             val expectedRawShortcut = expectedRawShortcutList.firstOrNull { it.shortcutId == rawShortcut.shortcutId }
             assertEquals(expectedRawShortcut, rawShortcut)
