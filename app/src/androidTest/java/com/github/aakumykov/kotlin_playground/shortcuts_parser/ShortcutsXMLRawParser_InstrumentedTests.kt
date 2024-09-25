@@ -15,7 +15,7 @@ class ShortcutsXMLRawParser_InstrumentedTests {
     private val expectedRawShortcutList = listOf(
         RawShortcut(
             "settings",
-            false,
+            true,
             "@drawable/shortcut_settings",
             "@string/shortcut_label_settings",
             ShortcutIntent(
@@ -27,7 +27,7 @@ class ShortcutsXMLRawParser_InstrumentedTests {
 
         RawShortcut(
             "gallery",
-            false,
+            true,
             "@drawable/shortcut_gallery",
             "@string/shortcut_label_gallery",
             ShortcutIntent(
@@ -39,7 +39,7 @@ class ShortcutsXMLRawParser_InstrumentedTests {
 
         RawShortcut(
             "video",
-            false,
+            true,
             "@drawable/shortcut_ic_videocam_white_48dp",
             "@string/shortcut_label_record_video",
             ShortcutIntent(
@@ -51,7 +51,7 @@ class ShortcutsXMLRawParser_InstrumentedTests {
 
         RawShortcut(
             "selfie",
-            false,
+            true,
             "@drawable/shortcut_ic_face_white_48dp",
             "@string/shortcut_label_selfie",
             ShortcutIntent(
@@ -76,11 +76,13 @@ class ShortcutsXMLRawParser_InstrumentedTests {
 
     private val rawParser = ShortcutsXMLRawParser.getDefault()
 
+
     @Test
     fun when_parse_raw_shortcuts_xml_when_count_equals_expected() {
         val listOfRaw = parse()
         assertEquals(expectedRawShortcutList.size, listOfRaw.size)
     }
+
 
     @Test
     fun when_parse_raw_shortcuts_xml_when_corresponding_objects_equals() {
@@ -90,8 +92,7 @@ class ShortcutsXMLRawParser_InstrumentedTests {
         }
     }
 
+
     private fun parse(): List<RawShortcut>
         = rawParser.parse(resources.openRawResource(com.github.aakumykov.kotlin_playground.R.raw.shortcuts))
-
-
 }
