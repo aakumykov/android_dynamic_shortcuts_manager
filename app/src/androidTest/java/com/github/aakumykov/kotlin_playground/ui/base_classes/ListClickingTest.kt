@@ -1,4 +1,4 @@
-package com.github.aakumykov.kotlin_playground.ui
+package com.github.aakumykov.kotlin_playground.ui.base_classes
 
 import androidx.test.espresso.Espresso.onData
 import androidx.test.espresso.action.ViewActions.click

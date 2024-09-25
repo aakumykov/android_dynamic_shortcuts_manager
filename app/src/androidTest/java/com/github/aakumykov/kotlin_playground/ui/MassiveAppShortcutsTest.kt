@@ -2,6 +2,7 @@ package com.github.aakumykov.kotlin_playground.ui
 
 import com.github.aakumykov.kotlin_playground.R
 import com.github.aakumykov.kotlin_playground.common_no_test_stuff.string
+import com.github.aakumykov.kotlin_playground.ui.base_classes.BasicShortcutsTest
 import org.junit.After
 import org.junit.Test
 

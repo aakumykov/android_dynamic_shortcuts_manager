@@ -5,6 +5,7 @@ import androidx.test.ext.junit.rules.ActivityScenarioRule
 import com.github.aakumykov.kotlin_playground.MainActivity
 import com.github.aakumykov.kotlin_playground.R
 import com.github.aakumykov.kotlin_playground.common_no_test_stuff.string
+import com.github.aakumykov.kotlin_playground.ui.base_classes.ListClickingTest
 import org.junit.After
 import org.junit.Rule
 import org.junit.Test
