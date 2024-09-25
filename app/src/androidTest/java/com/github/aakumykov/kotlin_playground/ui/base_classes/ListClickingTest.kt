@@ -22,6 +22,11 @@ abstract class ListClickingTest : BasicShortcutsTest() {
     }
 
 
+    fun clickRemoveAllShortcutsButton() {
+        clickButton(R.id.removeAllShortcuts)
+    }
+
+
     private fun withShortcutShortLabel(value: Int): Matcher<Any?> {
         return object: BoundedMatcher<Any?, Shortcut>(
             Shortcut::class.java) {
