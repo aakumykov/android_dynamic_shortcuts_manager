@@ -53,6 +53,7 @@ class SingleShortcutsManualCreatingTests : ListClickingTest() {
 
     private fun checkSingleSelectedShortcutManuallyCreated(@StringRes shortcutShortLabelId: Int) {
 
+        clickRemoveAllShortcutsButton()
         clickListItemWithShortcutShortLabel(shortcutShortLabelId)
         clickUpdateShortcutsButton()
 
