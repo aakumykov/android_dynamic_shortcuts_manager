@@ -16,9 +16,9 @@ class App : Application() {
 
     private fun createDefaultShortcutsOnFirstInstall() {
         PreferenceManager.getDefaultSharedPreferences(this).apply {
-            if (getBoolean(FIST_INSTALLATION, true)) {
+            if (getBoolean(IS_FIST_INSTALLATION_KEY, true)) {
                 createDefaultShortcutsSafely()
-                edit().putBoolean(FIST_INSTALLATION, false).apply()
+                edit().putBoolean(IS_FIST_INSTALLATION_KEY, false).apply()
             }
         }
     }
@@ -31,7 +31,7 @@ class App : Application() {
     companion object {
 
         val TAG: String = App::class.java.simpleName
-        private const val FIST_INSTALLATION = "FIST_INSTALLATION"
+        private const val IS_FIST_INSTALLATION_KEY = "FIST_INSTALLATION"
 
         @Throws(Exception::class)
         fun createDefaultShortcuts(context: Context) {
